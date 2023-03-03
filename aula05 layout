@@ -1,0 +1,38 @@
+//ESTRUTURA BÁSICA DE UM PROJETO FLUTTER
+
+import 'package:flutter/material.dart';
+
+const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
+
+void main() {
+      runApp(MaterialApp(
+    
+         debugShowCheckedModeBanner: true,
+         home: Scaffold(
+         appBar: AppBar( 
+              title: Text ("Instagram"),
+           backgroundColor: Colors.green,
+         ),
+           body: Padding(
+                padding: EdgeInsets.all(16),
+             child: Text("Conteúdo Príncipal"),
+            ),
+           
+           bottomNavigationBar: BottomAppBar(
+             //definição de rodapé
+             color: Colors.amber,
+              child:Padding(
+                padding:EdgeInsets.all(16),
+                 child: Row(
+                   children:<Widget> [
+                      Text ('Texto1'),
+                      Text ('Texto2')
+                ]
+               ),
+              ),
+             ),
+           ),
+        
+        ));
+  
+  }
